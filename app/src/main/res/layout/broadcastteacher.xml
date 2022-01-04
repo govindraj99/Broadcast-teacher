@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BroadcastteacherActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:layout_margin="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/back_iamgeview"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src = "@drawable/baseline_arrow_back"/>
+            <!--    <ImageView-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:id="@+id/imgageview_1"-->
+            <!--        android:layout_marginStart="28dp"-->
+            <!--        app:layout_constraintBottom_toBottomOf="@id/back_iamgeview"-->
+            <!--        app:layout_constraintStart_toEndOf="@id/back_iamgeview"-->
+            <!--        app:layout_constraintTop_toTopOf="@id/back_iamgeview"-->
+            <!--        android:src=""-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="163dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="162dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:text="Group chat"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/contact_iv"-->
+<!--        android:layout_width="32dp"-->
+<!--        android:layout_height="32dp"-->
+<!--        android:layout_marginRight="32dp"-->
+
+<!--        android:layout_marginBottom="32dp"-->
+
+<!--        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"-->
+<!--        app:layout_constraintRight_toRightOf="@+id/relativeLayout"-->
+<!--        app:srcCompat="@drawable/girl1" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/times_tv1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="70dp"-->
+<!--        android:text="07:30 PM"-->
+<!--        android:textColor="#AEAEAE"-->
+<!--        android:textSize="12dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/contact_iv"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+    <!--    app:layout_constraintStart_toEndOf="@+id/contact_iv" />-->
+
+    <TextView
+        android:id="@+id/times_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="08:00 PM"
+        android:textColor="#AEAEAE"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardview1"
+        app:layout_constraintStart_toEndOf="@+id/contact_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/cardvew2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/contact_imageView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/times_tv2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview3"
+        app:srcCompat="@drawable/girl1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardvew2"
+        android:layout_width="322dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="61dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Sed faucibus turpis in eu mi bibendum neque. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Sapien eget mi proin sed libero enim. Orci porta non pulvinar neque laoreet suspendisse ."
+                android:textColor="#191919"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="279dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="68dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardvew2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="6dp"
+                android:text="You"
+                android:textColor="#636363"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/chat1"
+                app:layout_constraintStart_toStartOf="@+id/chat1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chat1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="start"
+                android:text="Tempus imperdiet nulla malesuada pellentesque elit. Faucibus pulvinar elementum integer enim neque volutpat ac"
+                android:textColor="#191919"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/SSimageView"
+        android:layout_width="213dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/screenshot"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/cardview1" />
+
+    <ImageView
+        android:id="@+id/girl_iv"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SSimageView"
+        app:srcCompat="@drawable/girl1" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="12dp"
+        android:text="07:30 PM"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toStartOf="@+id/girl_iv"
+        app:layout_constraintTop_toBottomOf="@+id/SSimageView"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview3"
+        android:layout_width="279dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="79dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardvew2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="6dp"
+                android:text="Pamela S. Wilson"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Lacus sed turpis tincidunt id aliquet risus feugiat in. Sit amet tellus cras adipiscing enim eu turpis."
+                android:textColor="#191919"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:hint="Type your question here"
+                android:inputType="textAutoComplete" />
+
+            <ImageView
+                android:id="@+id/submitarrow"
+                android:layout_width="@dimen/iconSize"
+                android:layout_height="@dimen/iconSize"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+
+                android:src="@drawable/submitarrow" />
+
+            <ImageButton
+                android:id="@+id/SelectMaterial"
+                android:layout_width="@dimen/iconSize"
+                android:layout_height="@dimen/iconSize"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginEnd="33dp"
+                android:layout_marginRight="33dp"
+                android:layout_toStartOf="@+id/submitarrow"
+                android:layout_toLeftOf="@+id/submitarrow"
+                android:src="@drawable/selectmaterial" />
+
+
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
